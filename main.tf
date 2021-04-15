@@ -6,13 +6,15 @@ terraform {
       version = ">= 2.26"
     }
   }
+
 }
 
 provider "azurerm" {
   features {}
+
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "myTFResourceGroup"
+  name       = "myTFResourceGroup"
   location = "westus2"
-}
+   }
